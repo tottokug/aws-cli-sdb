@@ -1,12 +1,10 @@
 aws-cli-sdb
 ===========
 
-botocore json file to use simple db with aws cli 
+botocore json definition file to use Amazon SimpleDB with AWS CLI.
+place sdb.json to /path/to/botocore/data/aws , then you can use it like:
 
-place sdb.json to /path/to/botocore/data/aws .
-
-then you can use it like
-
+~~~
 $ aws sdb list-domains --output json
 {
     "Domains": [
@@ -14,3 +12,17 @@ $ aws sdb list-domains --output json
         "hoge"
     ]
 }
+~~~
+
+TODO
+
+* BatchDeleteAttributes
+* BatchPutAttributes
+* CreateDomain
+* DeleteAttributes
+* DeleteDomain
+* DomainMetadata
+* GetAttributes
+* ~~ListDomains~~ done
+* PutAttributes
+* Select
